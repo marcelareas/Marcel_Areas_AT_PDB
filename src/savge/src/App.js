@@ -1,13 +1,26 @@
-import React, { Component } from "react";
-import Teste from "./components/teste";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Sistema de Apoio ao Visitante em Grandes Eventos</h1>
-        <Teste />
-      </div>
-    );
-  }
+import Home from "./pages/Home";
+import Banheiros from "./pages/Banheiros";
+import ErrorPage from "./pages/ErrorPage"
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/banheiros">
+          <Banheiros />
+        </Route>
+        <Route >
+          <ErrorPage />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
+
+export default App;
