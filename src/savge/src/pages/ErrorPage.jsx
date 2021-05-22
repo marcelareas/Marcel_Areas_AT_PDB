@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
+import imagem from '../assets/img/image_error.jpg';
+import '../assets/css/errorPage.css'
 
 function ErrorPage() {
-    return (
-        <h1>Pagina de Erro</h1>
-    );
-  }
-  
-  export default ErrorPage;
+  return (
+    <main className="container flex flex--centro flex--coluna">
+      <img className="error-imagem" src={imagem} alt="ilustração doguito" />
+      <p className="naoencontrado-texto">Ops, Essa página não existe!</p>
+    </main>
+  );
+}
+
+export default ErrorPage;
