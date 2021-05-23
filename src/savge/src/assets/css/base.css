@@ -1,0 +1,25 @@
+.container { 
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex--centro {
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--coluna {
+	flex-direction: column;
+}
+
+.row {
+    margin: auto !important;
+}
+
+.padding-top {
+    padding-top: 1rem;
+}

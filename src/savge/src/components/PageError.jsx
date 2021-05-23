@@ -1,7 +1,6 @@
 import React from "react";
 import imagem from '../assets/img/image_error.jpg';
 import '../assets/css/errorPage.css'
-import '../assets/css/base/base.css';
 
 function ErrorPage() {
   return (
