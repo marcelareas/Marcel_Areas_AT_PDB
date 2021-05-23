@@ -1,8 +1,9 @@
 import React from 'react';
+import ListaBanheiros from '../components/ListaBanheiros'
 
 function Banheiros() {
     return (
-        <h1>Banheiros</h1>
+        <ListaBanheiros url={'/banheiros'} />
     );
   }
   
