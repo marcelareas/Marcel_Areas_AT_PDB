@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { busca } from "../context/context";
 import "../assets/css/base.css";
 
-const ListaBanheiros = ({ url }) => {
+const ListaDelegacias = ({ url }) => {
   var [list, setList] = useState([]);
   const [termo, setBusca] = useState('');
   list = list.filter((obj) => obj.name.toLowerCase().includes(termo.toLowerCase()));
@@ -49,4 +49,4 @@ const ListaBanheiros = ({ url }) => {
   );
 };
 
-export default ListaBanheiros;
+export default ListaDelegacias;

@@ -3,7 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import PageHome from "./components/PageHome";
 import PageBanheiros from "./components/PageBanheiros";
+import PageDelegacias from "./components/PageDelegacias"
+import PageBombeiros from "./components/PageBombeiros"
 import ErrorPage from "./components/PageError";
+
 import CompNavBar from "./components/CompNavbar";
 
 function App() {
@@ -18,10 +21,10 @@ function App() {
           <PageBanheiros />
         </Route>
         <Route path="/bombeiros">
-          <PageBanheiros />
+          <PageBombeiros />
         </Route>
         <Route path="/delegacias">
-          <PageBanheiros />
+          <PageDelegacias />
         </Route>
         <Route path="/escolas">
           <PageBanheiros />

@@ -3,7 +3,7 @@ import "../assets/css/base.css";
 
 function CompCardMenu({ titulo, descricao, url }) {
   return (
-    <div className="col-sm-3 padding-top">
+    <div className="col-sm-4 padding-top">
       <div className="card">
         <div className="card-body">
           <h5 className="card-title">{titulo}</h5>
