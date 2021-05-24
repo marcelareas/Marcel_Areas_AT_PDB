@@ -9,6 +9,7 @@ import PageHoteis from "./components/PageHoteis"
 import PageJogosOlimpicos from "./components/PageJogosOlimpicos"
 import PagePontosTuristicos from "./components/PagePontosTuristicos"
 import PagePostosSaude from "./components/PagePostosSaude"
+import PagePraias from "./components/PagePraias"
 import ErrorPage from "./components/PageError";
 
 import CompNavBar from "./components/CompNavbar";
@@ -43,7 +44,7 @@ function App() {
           <PagePostosSaude />
         </Route>
         <Route path="/praias">
-          <PageBanheiros />
+          <PagePraias />
         </Route>
         <Route path="/restaurantes">
           <PageBanheiros />

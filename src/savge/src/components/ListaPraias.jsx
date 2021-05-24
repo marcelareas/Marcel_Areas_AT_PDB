@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { busca } from "../context/context";
 import "../assets/css/base.css";
 
-const ListaPostosSaude = ({ url }) => {
+const ListaPraias = ({ url }) => {
   var [list, setList] = useState([]);
   const [termo, setBusca] = useState("");
   list = list.filter((obj) =>
@@ -35,14 +35,14 @@ const ListaPostosSaude = ({ url }) => {
               <div className="card-body">
                 <h5 className="card-title">{obj.name}</h5>
                 <br />
-                <div className="card-text">{`${
+                <div className="card-text">{` ${
                   obj.description == undefined
                     ? "Descrição não Informada"
-                    : obj.description.text
+                    : obj.description.short_text
                 }`}</div>
                 <br />
 
-                {/* { obj.contactData == undefined ? "Site não informado" : obj.contactData.website == undefined ?  "Site não informado" : <div>{` Site: ${obj.contactData.website}`}</div>} */}
+                <div className="card-text">{`Região: ${obj.taxonomies[0].type == undefined ? 'Não Informado' : obj.taxonomies[0].type}`}</div>
                 <br />
                 
                 { obj.geoResult === undefined ? "Localização não informada" : <a href={`https://www.google.com/maps/search/?api=1&query=${obj.geoResult.point.lat}${obj.geoResult.point.lng}`}
@@ -60,4 +60,4 @@ const ListaPostosSaude = ({ url }) => {
   );
 };
 
-export default ListaPostosSaude;
+export default ListaPraias;
