@@ -34,7 +34,7 @@ const ListaDelegacias = ({ url }) => {
                 />
                 <br />
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${obj.name}`}
+                  href={`https://www.google.com/maps/search/?api=1&query=${obj.geoResult.address}`}
                   target="_blank"
                   className="btn btn-primary"
                 >

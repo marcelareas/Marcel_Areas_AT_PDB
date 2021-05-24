@@ -5,6 +5,9 @@ import PageHome from "./components/PageHome";
 import PageBanheiros from "./components/PageBanheiros";
 import PageDelegacias from "./components/PageDelegacias"
 import PageBombeiros from "./components/PageBombeiros"
+import PageHoteis from "./components/PageHoteis"
+import PageJogosOlimpicos from "./components/PageJogosOlimpicos"
+import PagePontosTuristicos from "./components/PagePontosTuristicos"
 import ErrorPage from "./components/PageError";
 
 import CompNavBar from "./components/CompNavbar";
@@ -26,17 +29,14 @@ function App() {
         <Route path="/delegacias">
           <PageDelegacias />
         </Route>
-        <Route path="/escolas">
-          <PageBanheiros />
-        </Route>
         <Route path="/hoteis">
-          <PageBanheiros />
+          <PageHoteis />
         </Route>
         <Route path="/jogosOlimpicos">
-          <PageBanheiros />
+          <PageJogosOlimpicos />
         </Route>
         <Route path="/pontosTuristicos">
-          <PageBanheiros />
+          <PagePontosTuristicos />
         </Route>
         <Route path="/postosSaude">
           <PageBanheiros />

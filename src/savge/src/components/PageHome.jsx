@@ -25,11 +25,6 @@ function PageHome() {
           url="/delegacias"
         />
         <CompCardMenu
-          titulo="Escolas"
-          descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
-          url="/escolas"
-        />
-        <CompCardMenu
           titulo="Hotéis"
           descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
           url="/hoteis"

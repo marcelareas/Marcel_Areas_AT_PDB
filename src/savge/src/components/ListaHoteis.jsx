@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { busca } from "../context/context";
 import "../assets/css/base.css";
 
-const ListaDelegacias = ({ url }) => {
+const ListaHoteis = ({ url }) => {
   var [list, setList] = useState([]);
-  const [termo, setBusca] = useState('');
-  list = list.filter((obj) => obj.name.toLowerCase().includes(termo.toLowerCase()));
+  const [termo, setBusca] = useState("");
+  list = list.filter((obj) =>
+    obj.name.toLowerCase().includes(termo.toLowerCase())
+  );
 
   useEffect(() => {
     busca(url, setList);
@@ -14,9 +16,15 @@ const ListaDelegacias = ({ url }) => {
   return (
     <div>
       <div class="input-group row ">
-        <div className="col-sm-4 padding-top container">          
-          <input type="search" id="form1" class="form-control" placeholder='Digite o local que deseja buscar'
-          value={termo} onChange={(ev) => setBusca(ev.target.value)} />
+        <div className="col-sm-4 padding-top container">
+          <input
+            type="search"
+            id="form1"
+            class="form-control"
+            placeholder="Digite o local que deseja buscar"
+            value={termo}
+            onChange={(ev) => setBusca(ev.target.value)}
+          />
         </div>
       </div>
 
@@ -29,12 +37,15 @@ const ListaDelegacias = ({ url }) => {
                 <div
                   className="card-text"
                   dangerouslySetInnerHTML={{
-                    __html: obj.description.text,
+                    __html: obj.description.short_text
                   }}
                 />
                 <br />
+                <div className="card-text">{`Tipo Hospedagem: ${obj.taxonomies[0].type == undefined ? 'Não Informado' : obj.taxonomies[0].type}`}</div>
+                <br />
+                
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${obj.name}`}
+                  href={`https://www.google.com/maps/search/?api=1&query=${obj.geoResult.address}`}
                   target="_blank"
                   className="btn btn-primary"
                 >
@@ -49,4 +60,4 @@ const ListaDelegacias = ({ url }) => {
   );
 };
 
-export default ListaDelegacias;
+export default ListaHoteis;
