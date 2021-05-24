@@ -16,42 +16,42 @@ function PageHome() {
         />
         <CompCardMenu
           titulo="Bombeiros"
-          descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
+          descricao="Busca as informações sobre os quatéis de bonbeiros"
           url="/bombeiros"
         />
         <CompCardMenu
           titulo="Delegacias"
-          descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
+          descricao="Informação sobre as delegacias de polícia na cidade do RJ"
           url="/delegacias"
         />
         <CompCardMenu
           titulo="Hotéis"
-          descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
+          descricao="Busca os hotéis na cidade do RJ"
           url="/hoteis"
         />
         <CompCardMenu
           titulo="Jogos Olímpicos"
-          descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
+          descricao="Busca o local das arenas onde vão acontecer os eventos Olímpicos"
           url="/jogosOlimpicos"
         />
         <CompCardMenu
           titulo="Pontos Turístico"
-          descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
+          descricao="Busca os principais pontos turísticos da cidade do RJ"
           url="/pontosTuristicos"
         />
         <CompCardMenu
           titulo="Postos de Saude"
-          descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
+          descricao="Informações sobre os postos de saúde da cidade do Rio de Janeiro"
           url="/postosSaude"
         />
         <CompCardMenu
           titulo="Praias"
-          descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
+          descricao="Informações sobre as principais praias do Rio de Janeiro"
           url="/praias"
         />
         <CompCardMenu
           titulo="Restaurantes"
-          descricao="Busca os locais com banheiros disponiveis na cidade do RJ"
+          descricao="Informações sobre os restaurates na cidade maravilhosa"
           url="/restaurantes"
         />
       </div>
