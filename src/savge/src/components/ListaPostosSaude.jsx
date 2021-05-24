@@ -42,7 +42,7 @@ const ListaPostosSaude = ({ url }) => {
                 }`}</div>
                 <br />
 
-                { obj.contactData == undefined ? "Site não informado" : obj.contactData.website == undefined ?  "Site não informado" : <div>{` Site: ${obj.contactData.website}`}</div>}
+                {/* { obj.contactData == undefined ? "Site não informado" : obj.contactData.website == undefined ?  "Site não informado" : <div>{` Site: ${obj.contactData.website}`}</div>} */}
                 <br />
                 
                 { obj.geoResult === undefined ? "Localização não informada" : <a href={`https://www.google.com/maps/search/?api=1&query=${obj.geoResult.point.lat}${obj.geoResult.point.lng}`}
